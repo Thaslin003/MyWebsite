@@ -1,0 +1,112 @@
+body {
+  min-width: 350px;
+  min-height: 100vh;
+  color: white;
+  background: #232323;
+  background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%),
+    linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%),
+    linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%),
+    linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%);
+}
+
+.main-page {
+  width: 100%;
+  height: 100vh;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-content h2 {
+  font-size: 3.25rem;
+  margin: 3% 0;
+}
+
+.banner-content h4 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.banner-content h6 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 40px;
+  margin: 1% 0;
+}
+
+.banner-buttons div {
+  border: 1px solid white;
+  padding: 2% 4%;
+  border-radius: 5px;
+}
+
+.social-container {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-page {
+    padding-left: 0;
+  }
+
+  .banner-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner-content h4 {
+    font-size: 1.25rem;
+  }
+
+  .banner-buttons {
+    width: 100%;
+    gap: 20px;
+    margin: 5% 0;
+    justify-content: center;
+  }
+
+  .banner-content h6 {
+    font-size: 1rem;
+  }
+
+  .social-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .social-icons {
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .social-icons img {
+    width: 25px;
+  }
+}
