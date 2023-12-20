@@ -39,12 +39,16 @@ body {
 }
 
 .timeline-container {
-  margin: 5%;
-  height: 70vh;
+  margin: 10% 5% 5%;
+}
+
+.timeline-container h1 {
+  font-size: 2rem;
 }
 
 .timelinebg {
   height: 100%;
+  padding-top: 5%;
 }
 
 .timeline {
@@ -162,6 +166,28 @@ body {
 
 .roadmap-item-down .roadmap-item .title {
   margin: 0 0 30px 0;
+}
+
+@media only screen and (max-width: 1600px) {
+  .roadmap-item-down {
+    flex-direction: column;
+    margin-top: 31%;
+  }
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .roadmap-item-down {
+    flex-direction: column;
+    margin-top: 35%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .roadmap-item-down {
+    flex-direction: column;
+    margin-top: 46%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
