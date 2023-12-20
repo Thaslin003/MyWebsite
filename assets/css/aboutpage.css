@@ -56,6 +56,18 @@ body {
   padding: 0 10px;
 }
 
+.timeline-header {
+  display: flex;
+  align-items: baseline;
+}
+
+.timeline-header img {
+  width: 80px;
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+
 .timeline .owl-dots {
   display: none;
 }
@@ -97,6 +109,9 @@ body {
   margin-bottom: 40px;
   height: 165px;
   background: #030305;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .roadmap-content::before {
@@ -175,7 +190,6 @@ body {
   }
 }
 
-
 @media only screen and (max-width: 1400px) {
   .roadmap-item-down {
     flex-direction: column;
@@ -227,4 +241,84 @@ body {
   .roadmap-item-down .roadmap-item .title {
     margin: 40px 0 0px 0;
   }
+}
+
+.achievements-container {
+  margin: 5% 5% 5%;
+}
+
+.achievements-header {
+  display: flex;
+  align-items: baseline;
+}
+
+.achievements-header img {
+  width: 80px;
+  position: relative;
+  top: 14px;
+  left: 15px;
+}
+
+.achievements-content {
+  margin: 5%;
+}
+
+li {
+  padding-left: 2%;
+}
+li::marker {
+  content: "⚬";
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .timeline-container, .achievements-container {
+    margin-top: 15%;
+  }
+
+  .about-page {
+    margin-top: 25%;
+  }
+
+  .about-page-heading {
+    font-size: 1rem;
+  }
+
+  .about-page-sub-heading {
+    font-size: 1rem;
+    width: 70%;
+    margin-top: 10%;
+  }
+
+  .about-page-content {
+    font-size: 1rem; 
+    width: 90%;
+    text-align: justify;
+    margin-top: 10%;
+    line-height: 30px;
+  }
+
+  .about-page-content p {
+    margin-top: 7%;
+  }
+
+  .achievements-content ol {
+    padding-left: 30px;
+  }
+
+  li {
+    padding-left: 5%;
+  }
+
+  .timeline-header h1, .achievements-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .timeline-header img, .achievements-header img {
+    width: 40px;
+    top: 5px;
+  }
+
+
 }
