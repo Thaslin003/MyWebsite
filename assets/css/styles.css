@@ -61,7 +61,7 @@ footer a:hover {
   display: block;
   position: relative;
   top: 50px;
-  z-index: 1;
+  z-index: 100;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -84,7 +84,7 @@ footer a:hover {
   top: -7px;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 350;
   -webkit-touch-callout: none;
 }
 
@@ -96,7 +96,7 @@ footer a:hover {
   margin-bottom: 5px;
   background: #cdcdcd;
   border-radius: 3px;
-  z-index: 1;
+  z-index: 330;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
@@ -133,6 +133,7 @@ footer a:hover {
 
 .menuItem {
   position: absolute;
+  z-index: 300;
   width: 300px;
   height: 100vh;
   padding: 50px;
@@ -152,6 +153,7 @@ footer a:hover {
 .menu--right {
   position: fixed;
   right: 0;
+  z-index: 300;
 }
 
 .menu--right .menuToggle input {
