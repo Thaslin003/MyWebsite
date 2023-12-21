@@ -6,6 +6,13 @@
     <title>Dummy Portfolio</title>
 
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/contactpage.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <script>
@@ -17,14 +24,94 @@
         .catch((error) => console.error("Error fetching header:", error));
     </script>
 
-
-    <script>
-      // fetch("footer.html")
-      //   .then((response) => response.text())
-      //   .then((html) => {
-      //     document.body.insertAdjacentHTML("beforeend", html);
-      //   })
-      //   .catch((error) => console.error("Error fetching footer:", error));
-    </script>
+    <main class="contact-page">
+      <div class="header-container">
+        <h1>Contact</h1>
+      </div>
+      <div class="contact-container">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15794.329378967623!2d77.30846009519054!3d8.24468305410232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f8f967104d49%3A0xf94e65afb9bd4a0c!2sThuckalay%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1703152078062!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact-content">
+          <h3>Get in Touch</h3>
+          <p>
+            Invest in design of your company, everything what you want and need.
+            I'll be happy to help.
+          </p>
+          <div class="contact-details-container">
+            <div>
+              <a href="tel:8438108003">
+                <img
+                  src="./assets/images/icons/social-icons-06.svg"
+                  alt="icons"
+                />
+                <p>+91 8438 108 003</p></a
+              >
+            </div>
+            <div>
+              <a href="mailto:thastaslin@gmail.com">
+                <img
+                  src="./assets/images/icons/social-icons-07.svg"
+                  alt="icons"
+                />
+                <p>Thastaslin@gmail.com</p></a
+              >
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img
+                  src="./assets/images/icons/social-icons-08.svg"
+                  alt="icons"
+                />
+                <p>Thaslin.in</p></a
+              >
+            </div>
+            <div>
+              <a
+                href="https://maps.app.goo.gl/mQWFyxxGw77yftf57"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/icons/social-icons-09.svg"
+                  alt="icons"
+                />
+                <p>TamilNadu, India.</p></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <input type="text" id="name" name="Name" required placeholder="Your Name" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Your Email"
+            />
+            <textarea
+              name="message" id="message"
+              placeholder="Share Your Thoughts Here"
+            ></textarea>
+            <div class="submit-button-container">
+              <input class="form-submit" type="submit" value="Submit" />
+            </div>
+          </form>
+          <div class="Thankyou-container">
+            <h3>Thankyou For Sharing Your Thoughts with Us.</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
