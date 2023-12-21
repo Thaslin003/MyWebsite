@@ -1,0 +1,121 @@
+body {
+  min-width: 350px;
+  min-height: 100vh;
+  color: white;
+  background: #232323;
+  background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%),
+    linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%),
+    linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%),
+    linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%);
+
+  scrollbar-width: thin;
+}
+
+.portfolio-page {
+  margin: 5% 5%;
+}
+
+.header-container {
+  font-size: 2rem;
+}
+
+.gallery-container {
+  width: 100%;
+  display: flex;
+  margin: 5% 0;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  flex: 1 1 80%;
+  width: 100%;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  /* background-color: white; */
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+#myBtnContainer {
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 7% 2%;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  margin: 0 0 10%;
+  width: 90%;
+  border: 2px solid white;
+}
+
+.btn:hover {
+  border-color: #1daa61;
+}
+
+.btn.active {
+  border-color: #1daa61;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-page {
+    margin: 20% 0 5%;
+  }
+
+  .header-container {
+    padding-left: 4%;
+  }
+
+  .header-container h1 {
+    font-size: 2rem;
+  }
+
+  .row {
+    flex: 1 1 70%;
+    padding: 0 5% 0 0;
+  }
+
+  #myBtnContainer {
+    flex: 1 1 30%;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .btn {
+    margin-left: 10%;
+    font-size: 0.7rem;
+  }
+}
