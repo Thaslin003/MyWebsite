@@ -3,7 +3,10 @@ $(document).ready(function () {
 
   var isUserDetails = sessionStorage.getItem("UserDetails");
 
-  if (!isUserDetails) {
+  if (isUserDetails) {
+    $(".contact-form").hide();
+    $(".Thankyou-container").show();
+  } else {
     $(".contact-form").submit(function (event) {
       event.preventDefault();
 
