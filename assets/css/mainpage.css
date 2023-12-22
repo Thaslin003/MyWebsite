@@ -43,10 +43,33 @@ body {
   margin: 1% 0;
 }
 
-.banner-buttons div {
-  border: 1px solid white;
+.banner-buttons a {
+  border: 2px solid white;
   padding: 2% 4%;
   border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.mailto-button {
+  padding: 0 !important;
+}
+
+.mailto-button div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.banner-buttons a img {
+  width: 40px;
+}
+
+.banner-buttons a:hover {
+  border: 2px solid #1bb76e;
+  color: #1bb76e;
 }
 
 .social-container {
