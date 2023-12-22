@@ -55,6 +55,22 @@ body {
   padding: 0 !important;
 }
 
+.mailto-button-image {
+  display: block;
+}
+
+.mailto-button-gif {
+  display: none;
+}
+
+.mailto-button:hover .mailto-button-image {
+  display: none;
+}
+
+.mailto-button:hover .mailto-button-gif {
+  display: block;
+}
+
 .mailto-button div {
   height: 100%;
   display: flex;
